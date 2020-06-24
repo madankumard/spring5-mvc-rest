@@ -21,7 +21,7 @@ public class CategoryServiceTest {
     public static final Long ID = 2L;
     public static final String NAME = "Jimmy";
 
-    CategoryService categoryService;
+    CategoryServiceImpl categoryService;
 
     @Mock
     CategoryRepository categoryRepository;
@@ -29,7 +29,9 @@ public class CategoryServiceTest {
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        categoryService = new CategoryServiceImpl(CategoryMapper.INSTANCE, categoryRepository);
+        categoryService = new CategoryServiceImpl();
+        categoryService.setCategoryMapper(CategoryMapper.INSTANCE);
+        categoryService.setCategoryRepository(categoryRepository);
     }
 
     @Test

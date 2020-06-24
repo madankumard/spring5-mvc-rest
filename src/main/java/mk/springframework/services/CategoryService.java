@@ -1,6 +1,7 @@
 package mk.springframework.services;
 
 import mk.springframework.api.v1.model.CategoryDTO;
+import mk.springframework.api.v1.model.CustomerDTO;
 
 import java.util.List;
 
