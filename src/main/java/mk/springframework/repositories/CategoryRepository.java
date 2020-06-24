@@ -1,4 +1,4 @@
-package mk.springframework.respositories;
+package mk.springframework.repositories;
 
 import mk.springframework.domain.Category;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,7 +1,7 @@
 package mk.springframework.bootstrap;
 
 import mk.springframework.domain.Category;
-import mk.springframework.respositories.CategoryRepository;
+import mk.springframework.repositories.CategoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

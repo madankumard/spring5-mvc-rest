@@ -2,8 +2,7 @@ package mk.springframework.services;
 
 import mk.springframework.api.v1.mapper.CategoryMapper;
 import mk.springframework.api.v1.model.CategoryDTO;
-import mk.springframework.domain.Category;
-import mk.springframework.respositories.CategoryRepository;
+import mk.springframework.repositories.CategoryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

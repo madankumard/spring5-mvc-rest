@@ -3,7 +3,7 @@ package mk.springframework.services;
 import mk.springframework.api.v1.mapper.CategoryMapper;
 import mk.springframework.api.v1.model.CategoryDTO;
 import mk.springframework.domain.Category;
-import mk.springframework.respositories.CategoryRepository;
+import mk.springframework.repositories.CategoryRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
