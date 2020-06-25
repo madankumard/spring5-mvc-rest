@@ -6,6 +6,7 @@ import mk.springframework.bootstrap.Bootstrap;
 import mk.springframework.domain.Customer;
 import mk.springframework.repositories.CategoryRepository;
 import mk.springframework.repositories.CustomerRepository;
+import mk.springframework.repositories.VendorRepository;
 import mk.springframework.services.CustomerServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,6 +31,9 @@ public class CustomerServiceImplIT {
     @Autowired
     CategoryRepository categoryRepository;
 
+    @Autowired
+    VendorRepository vendorRepository;
+
     CustomerServiceImpl customerService;
 
     @Before
@@ -38,7 +42,7 @@ public class CustomerServiceImplIT {
         System.out.println(customerRepository.findAll().size());
 
         //setup data for testing
-        Bootstrap bootstrap = new Bootstrap(categoryRepository, customerRepository);
+        Bootstrap bootstrap = new Bootstrap(categoryRepository, customerRepository, vendorRepository);
         bootstrap.run(); //load data
 
         customerService = new CustomerServiceImpl();
