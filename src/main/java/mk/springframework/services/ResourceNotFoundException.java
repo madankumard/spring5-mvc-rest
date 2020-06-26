@@ -1,5 +1,11 @@
 package mk.springframework.services;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+/*Template class for resource not found exception.
+ * @ResponseCode annotation ensures consistency of status code anywhere this exception is thrown.*/
+@ResponseStatus(code = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException{
     public ResourceNotFoundException() {
     }
