@@ -1,7 +1,7 @@
 package mk.springframework.services;
 
 import mk.springframework.api.v1.mapper.CustomerMapper;
-import mk.springframework.api.v1.model.CustomerDTO;
+import mk.springframework.model.CustomerDTO;
 import mk.springframework.domain.Customer;
 import mk.springframework.repositories.CustomerRepository;
 import org.junit.Assert;
